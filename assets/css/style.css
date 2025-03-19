@@ -1,0 +1,82 @@
+:root {
+  --bs-primary: #CC5500 !important; /* Trying to get Burnt Orange but i think bootstrap keeps overriding it with Blue*/
+  --bs-primary-rgb: 204,85,0;
+}
+
+/* Force .btn-primary to have an orange background, orange border, white text */
+.btn-primary {
+  background-color: #CC5500 !important;
+  border-color: #CC5500 !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #b44a00 !important; /* slightly darker orange on hover/focus */
+  border-color: #b44a00 !important;
+}
+
+/* For outline style: .btn-outline-primary */
+.btn-outline-primary {
+  color: #CC5500 !important;
+  border-color: #CC5500 !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: #fff !important;
+  background-color: #CC5500 !important;
+  border-color: #CC5500 !important;
+}
+
+/*  Poppins from Google Fonts */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fefefe;
+}
+
+/* Navbar brand with a little bigger font */
+.navbar-brand {
+  font-size: 1.4rem;
+}
+
+/* big photo section styles */
+#hero {
+  background-color: #f9f9f9;
+}
+#hero img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Subtle transition on hover for links, buttons, etc. */
+a,
+.btn {
+  transition: all 0.3s ease;
+}
+a:hover,
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* Section headings */
+.section-heading h2,
+.text-center h2,
+.text-center h6 {
+  letter-spacing: 0.5px;
+}
+
+/* Skill cards, etc. */
+.skill-card:hover {
+  transform: translateY(-2px);
+}
+.project-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer .social-links a:hover {
+  color: #ffbf00; 
+}
+
