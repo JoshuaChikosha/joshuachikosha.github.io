@@ -6,7 +6,7 @@
   <title>Joshua Chikosha - Portfolio</title>
 
   <!-- Logo -->
-  <link rel="icon" href="assets/img/icons/logo.png" /> 
+  <link rel="icon" href="assets/img/icons/logojc.png" /> 
 
   <!-- Google Fonts (Poppins) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -80,7 +80,17 @@
           <p class="lead mt-3 mb-4">
             Electrical &amp; Computer Engineering Honors @ UT Austin
           </p>
-          <a href="#about" class="btn btn-primary px-4 py-2 scrollto">Learn More</a>
+          <div class="d-flex gap-2">
+            <a href="#about" class="btn btn-primary px-4 py-2 scrollto">Learn More</a>
+          
+            <a href="campaign.html" class="btn btn-outline-primary px-4 py-2">
+              NSBE Campaign
+            </a>
+            <a href="aboutme.html" class="btn btn-primary px-4 py-2">
+              Learn Even More About Me!
+            </a>
+          </div>
+          
         </div>
         <div class="col-lg-6 d-none d-lg-block">
           <!-- Photo of me and friends -->
@@ -139,10 +149,10 @@
         <p class="text-muted">Technologies &amp; Tools I Work With</p>
       </div>
   
-      <!-- Use align-items-stretch on the row to make all columns stretch equally -->
+      <!-- Reminder for future me: Use align-items-stretch on the row to make all columns stretch equally -->
       <div class="row g-4 justify-content-center align-items-stretch">
   
-        <!-- Each column uses d-flex to let the card inside fill the column's height -->
+        <!-- Reminder for future me: each column uses d-flex to let the card inside fill the column's height -->
         <div class="col-md-3 col-sm-6 d-flex">
           <div class="skill-card bg-white shadow-sm p-4 text-center rounded flex-fill">
             <img
@@ -233,85 +243,104 @@
   
     <!-- END SKILLS SECTION -->
 
-    <!-- ======= EXPERIENCE SECTION ======= -->
-    <section id="experience" class="py-5">
-      <div class="container" data-aos="fade-up">
-        <div class="section-heading text-center mb-5">
-          <h2 class="fw-bold">Experience</h2>
-        </div>
+<!-- ======= EXPERIENCE SECTION ======= -->
+<section id="experience" class="py-5">
+  <div class="container" data-aos="fade-up">
+    <div class="section-heading text-center mb-5">
+      <h2 class="fw-bold">Experience</h2>
+    </div>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <!-- Job 1 -->
-            <div class="card mb-4 border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="fw-bold">Incoming Software Engineering Intern</h5>
-                <div class="small text-muted mb-2">Bloomberg LP | Jun 2025 – Aug 2025 | New York, NY</div>
-                <p class="mb-0">
-                  <em>Excited to join the Bloomberg team this upcoming summer.</em>
-                </p>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+
+        <!-- Job 1 -->
+        <div class="card mb-4 border-0 shadow-sm">
+          <div class="card-body d-flex">
+            <img 
+              src="assets/img/companyIcons/bloomberg.png" 
+              alt="Bloomberg Icon" 
+              style="width:40px; height:40px; object-fit:contain; margin-right:12px;"
+            />
+            <div>
+              <h5 class="fw-bold">Incoming Software Engineering Intern</h5>
+              <div class="small text-muted mb-2">
+                Bloomberg LP | Jun 2025 – Aug 2025 | New York, NY
               </div>
+              <p class="mb-0">
+                <em>Excited to join the Bloomberg team this upcoming summer.</em>
+              </p>
             </div>
-
-            <!-- Job 1.5 /I just started it -->
-            <div class="card mb-4 border-0 shadow-sm">
-                <div class="card-body">
-                  <h5 class="fw-bold">Research Assistant</h5>
-                  <div class="small text-muted mb-2">Clemson HATLab | Jan 2025 – Present | Clemson, SC</div>
-                  <ul class="mb-0">
-                    <li>
-                        Designing the front-end infrastructure for a fake news detection web tool.
-                      </li>
-                    </ul>
-                </div>
-              </div>
-
-            <!-- Job 2 -->
-            <div class="card mb-4 border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="fw-bold">Research Assistant</h5>
-                <div class="small text-muted mb-2">UT Austin FAST Lab | Aug 2024 - Jan 2025</div>
-                <ul class="mb-0">
-                  <li>
-                    Developing a cycle-accurate simulator for Primate to achieve 1-to-1
-                    replication of VLIW-based soft processors
-                  </li>
-                  <li>
-                    Modeling thread interleaving, BFU integration, and register
-                    optimizations for precise performance analysis
-                  </li>
-                  <li>Bypassing FPGA synthesis overhead for rapid testing</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Job 3 -->
-            <div class="card mb-4 border-0 shadow-sm">
-              <div class="card-body">
-                <h5 class="fw-bold">Software Research Intern</h5>
-                <div class="small text-muted mb-2">
-                  Texas A&amp;M University-Kingsville | Jun 2024 - Aug 2024
-                </div>
-                <ul class="mb-0">
-                  <li>
-                    Co-author on a paper accepted for publication in the Springer
-                    LNCS Proceedings of ICIOT-2024
-                  </li>
-                  <li>
-                    Led a team of 3 in creating an algorithm to maximize Wireless Sensor
-                    Network efficiency
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-
-
           </div>
         </div>
-      </div>
-    </section>
-    <!-- END EXPERIENCE SECTION -->
+
+        <!-- Job 2 -->
+        <div class="card mb-4 border-0 shadow-sm">
+          <div class="card-body d-flex">
+            <!-- Another icon -->
+            <img 
+              src="assets/img/companyIcons/clemson.png" 
+              alt="Clemson Icon" 
+              style="width:40px; height:40px; object-fit:contain; margin-right:12px;"
+            />
+            <div>
+              <h5 class="fw-bold">Research Assistant</h5>
+              <div class="small text-muted mb-2">
+                Clemson HATLab | Jan 2025 – Present | Clemson, SC
+              </div>
+              <ul class="mb-0">
+                <li>Designing front-end infrastructure for a fake news detection tool</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="card mb-4 border-0 shadow-sm">
+          <div class="card-body d-flex">
+            <img 
+              src="assets/img/companyIcons/UT.png"
+              alt="UT FAST Lab Icon"
+              style="width:40px; height:40px; object-fit:contain; margin-right:12px;"
+            />
+            <div>
+              <h5 class="fw-bold">Research Assistant</h5>
+              <div class="small text-muted mb-2">UT Austin FAST Lab | Aug 2024 - Jan 2025</div>
+              <ul class="mb-0">
+                <li>Developed an instruction-accurate simulator for “Primate” to achieve 1-to-1 replication of VLIW-based soft processors</li>
+                <li>Modeled thread interleaving, BFU integration, and register optimizations for precise performance analysis</li>
+                <li>Enabled rapid testing and design iterations by bypassing FPGA synthesis overhead</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 4 -->
+        <div class="card mb-4 border-0 shadow-sm">
+          <div class="card-body d-flex">
+            <img 
+              src="assets/img/companyIcons/TAMUK.png"
+              alt="TAMU-Kingsville Icon"
+              style="width:40px; height:40px; object-fit:contain; margin-right:12px;"
+            />
+            <div>
+              <h5 class="fw-bold">Software Research Intern</h5>
+              <div class="small text-muted mb-2">
+                Texas A&amp;M University-Kingsville | Jun 2024 - Aug 2024
+              </div>
+              <ul class="mb-0">
+                <li>Co-author on paper in Springer LNCS (ICIOT-2024)</li>
+                <li>Led a team of 3 optimizing wireless sensor networks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.col-lg-10 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section>
+<!-- END EXPERIENCE SEC
+
 
     <!-- ======= PROJECTS SECTION ======= -->
     <section id="projects" class="bg-light py-5">
@@ -429,49 +458,58 @@
     </section>
     <!-- END PROJECTS SECTION -->
 
-    <!-- ======= LEADERSHIP SECTION ======= -->
-    <section id="leadership" class="py-5">
-      <div class="container" data-aos="fade-up">
-        <div class="section-heading text-center mb-5">
-          <h2 class="fw-bold">Leadership &amp; Involvement</h2>
-        </div>
+  <!-- ======= LEADERSHIP SECTION ======= -->
+<section id="leadership" class="py-5">
+  <div class="container" data-aos="fade-up">
+    <div class="section-heading text-center mb-5">
+      <h2 class="fw-bold">Leadership &amp; Involvement</h2>
+    </div>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <!-- Leadership item 1 -->
-            <div class="mb-4 p-4 bg-white shadow-sm rounded">
-              <h5 class="fw-bold">NSBE Senator &amp; Conference Planner</h5>
-              <div class="small text-muted mb-2">
-                UT National Society of Black Engineers | May 2024 - Present
-              </div>
-              <ul class="mb-0">
-                <li>Advocated for chapter interests at regional and national meetings</li>
-                <li>
-                  Organized travel and lodging for 35+ members attending the NSBE
-                  national conference
-                </li>
-              </ul>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+
+        <!-- Leadership item 1 -->
+        <div class="mb-4 p-4 bg-white shadow-sm rounded d-flex">
+          <img 
+          src="assets/img/campaign/nsbe-logo.png" 
+          alt="Bloomberg Icon" 
+          style="width:40px; height:40px; object-fit:contain; margin-right:12px;"
+        />
+          <div>
+            <h5 class="fw-bold">NSBE Senator &amp; Conference Planner</h5>
+            <div class="small text-muted mb-2">
+              UT National Society of Black Engineers | May 2024 - Present
             </div>
-
-            <!-- Leadership item 2 -->
-            <div class="mb-4 p-4 bg-white shadow-sm rounded">
-              <h5 class="fw-bold">Freshmen Action Team President</h5>
-              <div class="small text-muted mb-2">UT NSBE | Oct 2023 - May 2024</div>
-              <ul class="mb-0">
-                <li>
-                  Led 20+ underclassmen through community building meetings
-                </li>
-                <li>
-                  Created a hype video to help with the engagement of the organization
-                </li>
-              </ul>
-            </div>
-
+            <ul class="mb-0">
+              <li>Advocated for chapter interests at regional & national meetings</li>
+              <li>Organized travel for 35+ members for NSBE national conference</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- END LEADERSHIP SECTION -->
+
+        <!-- Leadership item 2 -->
+        <div class="mb-4 p-4 bg-white shadow-sm rounded d-flex">
+          <img 
+          src="assets/img/campaign/nsbe-logo.png" 
+          alt="Bloomberg Icon" 
+          style="width:40px; height:40px; object-fit:contain; margin-right:12px;"
+        />
+          <div>
+            <h5 class="fw-bold">Freshman Action Team President</h5>
+            <div class="small text-muted mb-2">UT NSBE | Oct 2023 - May 2024</div>
+            <ul class="mb-0">
+              <li>Led 20+ underclassmen through community building</li>
+              <li>Created a hype video for organizational engagement</li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- /.col-lg-10 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section>
+<!-- END LEADERSHIP SECTION -->
+
 
     <!-- ======= CONTACT SECTION ======= -->
     <section id="contact" class="py-5">
@@ -567,7 +605,7 @@
         const targetEl = document.querySelector(this.getAttribute('href'));
         if (targetEl) {
           e.preventDefault();
-          const offsetTop = targetEl.offsetTop - 60; // nav height offset
+          const offsetTop = targetEl.offsetTop - 60;
           window.scroll({
             top: offsetTop,
             behavior: 'smooth'
