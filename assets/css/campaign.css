@@ -83,15 +83,13 @@ body {
     Hero Section with parallax or background cover 
   */
   .hero-section {
-    position: relative;
-    width: 100%;
-    min-height: 100vh; /* or a smaller height if you prefer */
     background: url("../img/campaign/nsbe-group.JPEG") no-repeat center center;
     background-size: cover;
-    background-attachment: fixed; /* parallax effect if desired */
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     overflow: hidden;
   }
 
