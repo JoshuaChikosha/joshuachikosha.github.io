@@ -55,6 +55,44 @@
       object-fit: cover;
       border-radius: 5px;
     }
+
+    /*  container for the carousel images */
+.custom-carousel-container {
+  height: 400px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF; /
+}
+
+.custom-carousel-container img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain; 
+}
+
+/* smaller devices */
+@media (max-width: 576px) {
+  .custom-carousel-container {
+    height: 300px;
+  }
+}
+    
+
+.carousel-inner .ratio img {
+  object-fit: contain;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'><path d='M7 1L3 5l4 4' fill='none' stroke='black' stroke-width='1'/></svg>");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'><path d='M3 1l4 4-4 4' fill='none' stroke='black' stroke-width='1'/></svg>");
+}
+
+
+
   </style>
 </head>
 <body>
@@ -92,17 +130,42 @@
   <main class="bg-white pb-5">
     <div class="container">
 
-      <!-- SECTION: My Background -->
       <section class="my-5">
         <div class="row align-items-center">
-          <div class="col-md-5 mb-3 mb-md-0">
-            <img
-              src="assets/img/aboutme/me.png"
-              alt="Joshua's Photo"
-              class="img-fluid rounded shadow-sm w-100"
-              style="max-height:620px; object-fit:cover;"
-            />
+        <!-- Left Column: Carousel -->
+        <div class="col-md-5 mb-3 mb-md-0">
+          <div id="aboutMeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="custom-carousel-container">
+                  <img 
+                    src="assets/img/aboutme/me.png" 
+                    alt="Joshua's Photo" 
+                    class="d-block w-100">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="custom-carousel-container">
+                  <img 
+                    src="assets/img/aboutme/me2.jpg" 
+                    alt="Joshua's Photo 2" 
+                    class="d-block w-100">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#aboutMeCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#aboutMeCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
+        </div>
+
+
+          <!-- Right Column: Text -->
           <div class="col-md-7">
             <h2 class="text-black fw-bold mb-3">Some more info about me</h2>
             <p class="fs-5 text-muted">
@@ -119,6 +182,8 @@
           </div>
         </div>
       </section>
+      
+      
 
       <!-- Photo Collage -->
       <section class="my-5">
