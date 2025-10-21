@@ -55,7 +55,10 @@ a,
 .btn {
   transition: all 0.3s ease;
 }
-a:hover,
+a:hover {
+  color: #CC5500 !important;
+  opacity: 0.85;
+}
 .btn:hover {
   opacity: 0.85;
 }
@@ -68,8 +71,22 @@ a:hover,
 }
 
 /* Skill cards, etc. */
+.skill-card {
+  padding: 1.5rem;
+  margin: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.375rem;
+  transition: transform 0.3s ease;
+}
 .skill-card:hover {
   transform: translateY(-2px);
+}
+.project-card {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
 }
 .project-card:hover {
   transform: translateY(-2px);
